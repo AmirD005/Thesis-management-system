@@ -1,0 +1,88 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "name": "ali",
+            "role": "teacher",
+            "advisor_id": null,
+            "defense_date": null,
+            "password_salt": "9ba8acd5d269b0794131b14f116bedde",
+            "password_hash": "19dcc5d88e3c04a97dfff4fd82e005a09ce4978ba9ed7cde59ade951bcd4355a",
+            "password_iterations": 150000,
+            "created_at": "2025-08-17T13:23:15Z",
+            "last_login": null,
+            "is_active": true,
+            "advisee_capacity": 5,
+            "jury_capacity": 10
+        },
+        {
+            "id": 2,
+            "name": "amir",
+            "role": "student",
+            "advisor_id": 1,
+            "defense_date": "2025-05-11",
+            "password_salt": "818812bce86bdb5b67603ec1f81a711f",
+            "password_hash": "6247da9e03b9e3e9dabd78a939ecb26280164dd8cc399fe3b9367a7993b979f8",
+            "password_iterations": 150000,
+            "created_at": "2025-08-17T13:23:56Z",
+            "last_login": null,
+            "is_active": true
+        },
+        {
+            "id": 3,
+            "name": "mohamad azizi",
+            "role": "student",
+            "advisor_id": 4,
+            "defense_date": "2025-08-19",
+            "password_salt": "36310868a8f32cd27295a79fdde708bc",
+            "password_hash": "65e449b1533665ddf5be3011af575a3b9b22dcc4fe050511539c355f1431707d",
+            "password_iterations": 150000,
+            "created_at": "2025-08-18T09:20:31Z",
+            "last_login": null,
+            "is_active": true,
+            "advisor_history": [
+                {
+                    "old_advisor": 1,
+                    "new_advisor": 4,
+                    "changed_by": null,
+                    "changed_at": "2025-08-18T09:42:09Z"
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "name": "Mohsen Amiri",
+            "role": "teacher",
+            "advisor_id": null,
+            "defense_date": null,
+            "password_salt": "4a8cec42c328081f4d90cdab70da7146",
+            "password_hash": "c1eb59c7cff5ab901b710f782b9efd5ca6298aaf1fcbeec12166c57c051dfb25",
+            "password_iterations": 150000,
+            "created_at": "2025-08-18T09:41:26Z",
+            "last_login": null,
+            "is_active": true,
+            "advisee_capacity": 3,
+            "jury_capacity": 5
+        }
+    ],
+    "files": [],
+    "messages": [],
+    "defenses": [
+        {
+            "id": 1,
+            "student_id": 3,
+            "date": "2025-01-11",
+            "committee_members": [
+                {
+                    "id": 4,
+                    "name": "Mohsen Amiri",
+                    "role": "teacher"
+                }
+            ],
+            "final_score": 17.0,
+            "notes": "this is defense note",
+            "recorded_by": 4,
+            "recorded_at": "2025-08-18T09:44:47Z"
+        }
+    ]
+}
